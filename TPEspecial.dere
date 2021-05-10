@@ -1,52 +1,52 @@
 <DERExt>
- <Entity y="231" width="115" name="EXTRACCION_DEPOSITO" x="-473" subtype="1" isAssociative="0">
+ <Entity y="73" width="115" name="EXTRACCION_DEPOSITO" x="-543" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="cuenta" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
   <Simple sk="0" optionSQL="1" name="fecha" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
   <Simple sk="0" optionSQL="1" name="monto" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="174" width="65" name="OPERACION" x="-635" subtype="0" isAssociative="0"/>
- <Entity y="131" width="120" name="OPERACION_ENTRE_CTAS" x="-471" subtype="1" isAssociative="0">
+ <Entity y="-71" width="65" name="OPERACION" x="-345" subtype="0" isAssociative="0"/>
+ <Entity y="60" width="120" name="OPERACION_ENTRE_CTAS" x="-340" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="monto" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
   <Simple sk="0" optionSQL="1" name="fecha" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
   <Simple sk="0" optionSQL="1" name="cta_origen" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
   <Simple sk="0" optionSQL="1" name="cta_destino" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="-198" width="60" name="PRESTAMO" x="-631" subtype="1" isAssociative="0">
+ <Entity y="-169" width="60" name="PRESTAMO" x="2" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="cancelado" mult="0" null="1" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
   <Simple sk="0" optionSQL="1" name="limite" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
+  <Simple sk="0" optionSQL="1" name="oficial_de_negocios" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="-82" width="115" name="CAJA_AHORRO_DOLARES" x="-669" subtype="1" isAssociative="0">
+ <Entity y="-16" width="115" name="CAJA_AHORRO_DOLARES" x="-57" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="limite_extracción" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="-28" width="105" name="CAJA_AHORRO_PESOS" x="-733" subtype="1" isAssociative="0">
+ <Entity y="58" width="105" name="CAJA_AHORRO_PESOS" x="-117" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="limite_extracción" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="-147" width="100" name="CUENTA_CORRIENTE" x="-644" subtype="1" isAssociative="0">
+ <Entity y="-93" width="100" name="CUENTA_CORRIENTE" x="-30" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="limite_descubierto" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="-273" width="60" name="SERVICIO" x="-720" subtype="0" isAssociative="0"/>
- <Entity y="-25" width="50" name="CIUDAD" x="86" subtype="0" isAssociative="0"/>
- <Entity y="-196" width="60" name="SUCURSAL" x="82" subtype="0" isAssociative="0">
+ <Entity y="-274" width="50" name="CUENTA" x="-123" subtype="0" isAssociative="0">
+  <Simple sk="0" optionSQL="1" name="nro_de_cuenta" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="1" parent=""/>
+ </Entity>
+ <Entity y="-85" width="50" name="CIUDAD" x="206" subtype="0" isAssociative="0"/>
+ <Entity y="-274" width="60" name="SUCURSAL" x="197" subtype="0" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="nro_sucursal" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="1" parent=""/>
  </Entity>
- <Entity y="51" width="60" name="CONJUNTA" x="-178" subtype="1" isAssociative="0">
+ <Entity y="-12" width="60" name="CONJUNTA" x="-642" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="titular" mult="1" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="55" width="70" name="INDIVIDUAL" x="-25" subtype="1" isAssociative="0"/>
- <Entity y="-78" width="55" name="EMPRESA" x="-352" subtype="1" isAssociative="0">
+ <Entity y="-74" width="70" name="INDIVIDUAL" x="-645" subtype="1" isAssociative="0"/>
+ <Entity y="-152" width="55" name="EMPRESA" x="-723" subtype="1" isAssociative="0">
   <Simple sk="0" optionSQL="1" name="apoderado" mult="1" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
  </Entity>
- <Entity y="-74" width="70" name="PARTICULAR" x="-133" subtype="1" isAssociative="0"/>
- <Entity y="-249" width="55" name="CLIENTE" x="-233" subtype="0" isAssociative="0"/>
- <RBinary max1="N" dep="0" name="Pertenece" width="55" onUpdate0="restrict" min1="1" max0="N" min0="1" onDelete1="restrict" name1="SUCURSAL" match1="simple" x="-63" firstWeak="0" onDelete0="restrict" name0="CLIENTE" y="-201" onUpdate1="restrict" match0="simple" rolename="">
-  <Simple sk="0" optionSQL="1" name="nro_cuenta" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
- </RBinary>
- <Hierarchy centerX="null" name0="OPERACION" name1="EXTRACCION_DEPOSITO" name2="OPERACION_ENTRE_CTAS" centerY="null" cont="3" name="Hierarchy OPERACION" typeName="tipo" total="false" exclusive="true"/>
- <RBinary max1="N" dep="0" name="Obtiene" width="40" onUpdate0="restrict" min1="1" max0="N" min0="0" onDelete1="restrict" name1="CLIENTE" match1="simple" x="-400" firstWeak="0" onDelete0="restrict" name0="PRESTAMO" y="-208" onUpdate1="restrict" match0="simple" rolename="">
-  <Simple sk="0" optionSQL="1" name="oficial_de_negocio" mult="0" null="0" cant3="2" type="integer" cant1="20" cant2="0" pk="0" parent=""/>
- </RBinary>
- <Hierarchy centerX="-689" name0="SERVICIO" name1="PRESTAMO" name2="CAJA_AHORRO_DOLARES" centerY="-175" cont="5" name="Hierarchy SERVICIO" typeName="tipo" total="false" name3="CAJA_AHORRO_PESOS" name4="CUENTA_CORRIENTE" exclusive="true"/>
- <RBinary max1="1" dep="0" name="Está" width="40" onUpdate0="restrict" min1="1" max0="N" min0="1" onDelete1="restrict" name1="CIUDAD" match1="simple" x="111" firstWeak="0" onDelete0="restrict" name0="SUCURSAL" y="-91" onUpdate1="restrict" match0="simple" rolename=""/>
- <Hierarchy centerX="-96" name0="PARTICULAR" name1="CONJUNTA" name2="INDIVIDUAL" centerY="11" cont="3" name="Hierarchy PARTICULAR" typeName="tipo" total="false" exclusive="true"/>
- <Hierarchy centerX="null" name0="CLIENTE" name1="EMPRESA" name2="PARTICULAR" centerY="null" cont="3" name="Hierarchy CLIENTES" typeName="tipo" total="false" exclusive="true"/>
+ <Entity y="-152" width="70" name="PARTICULAR" x="-547" subtype="1" isAssociative="0"/>
+ <Entity y="-280" width="55" name="CLIENTE" x="-621" subtype="0" isAssociative="0"/>
+ <RBinary max1="N" dep="0" name="Ejecuta" width="40" onUpdate0="restrict" min1="1" max0="1" min0="1" onDelete1="restrict" name1="OPERACION" match1="simple" x="-222" firstWeak="0" onDelete0="restrict" name0="CUENTA" y="-141" onUpdate1="restrict" match0="simple" rolename=""/>
+ <RBinary max1="1" dep="0" name="Asociada" width="40" onUpdate0="restrict" min1="1" max0="N" min0="1" onDelete1="restrict" name1="SUCURSAL" match1="simple" x="92" firstWeak="0" onDelete0="restrict" name0="CUENTA" y="-254" onUpdate1="restrict" match0="simple" rolename=""/>
+ <RBinary max1="1" dep="0" name="Pertenece" width="55" onUpdate0="restrict" min1="1" max0="N" min0="1" onDelete1="restrict" name1="CLIENTE" match1="simple" x="-339" firstWeak="0" onDelete0="restrict" name0="CUENTA" y="-261" onUpdate1="restrict" match0="simple" rolename=""/>
+ <Hierarchy centerX="-347" name0="OPERACION" name1="EXTRACCION_DEPOSITO" name2="OPERACION_ENTRE_CTAS" centerY="17" cont="3" name="Hierarchy OPERACION" typeName="tipo" total="false" exclusive="true"/>
+ <Hierarchy centerX="-67" name0="CUENTA" name1="PRESTAMO" name2="CAJA_AHORRO_DOLARES" centerY="-100" cont="5" name="Hierarchy SERVICIO" typeName="tipo" total="false" name3="CAJA_AHORRO_PESOS" name4="CUENTA_CORRIENTE" exclusive="true"/>
+ <RBinary max1="1" dep="0" name="Está" width="40" onUpdate0="restrict" min1="1" max0="N" min0="1" onDelete1="restrict" name1="CIUDAD" match1="simple" x="229" firstWeak="0" onDelete0="restrict" name0="SUCURSAL" y="-160" onUpdate1="restrict" match0="simple" rolename=""/>
+ <Hierarchy centerX="-512" name0="PARTICULAR" name1="CONJUNTA" name2="INDIVIDUAL" centerY="-59" cont="3" name="Hierarchy PARTICULAR" typeName="tipo" total="false" exclusive="true"/>
+ <Hierarchy centerX="-596" name0="CLIENTE" name1="EMPRESA" name2="PARTICULAR" centerY="-189" cont="3" name="Hierarchy CLIENTES" typeName="tipo" total="false" exclusive="true"/>
 </DERExt>
