@@ -1,0 +1,74 @@
+<DERExt>
+ <Entity width="50" x="503" weak="1" name="CIUDAD" strongEnt="PROVINCIA" y="-240">
+  <Simple sk="0" pk="1" type="integer" parent="" name="codigo_postal" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="nombre_ciudad" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="50" x="3" weak="1" name="CUENTA" strongEnt="SUCURSAL" y="-266">
+  <Simple sk="0" pk="1" type="integer" parent="" name="Nro_cuenta" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="55" x="-562" name="CLIENTE" subtype="0" isAssociative="0" y="-241">
+  <Simple sk="0" pk="1" type="integer" parent="" name="CUIL" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="nombre" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="apellido" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Compound sk="0" pk="0" parent="" name="direccion" optionSQL="1" null="0" mult="0" amount="3">
+   <Simple sk="0" pk="0" type="integer" parent="direccion" name="calle" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+   <Simple sk="0" pk="0" type="integer" parent="direccion" name="nro" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+   <Simple sk="0" pk="0" type="integer" parent="direccion" name="depto" optionSQL="1" null="1" cant1="20" cant3="2" mult="0" cant2="0"/>
+  </Compound>
+  <Simple sk="0" pk="0" type="integer" parent="" name="telefono" optionSQL="1" null="0" cant1="20" cant3="2" mult="1" cant2="0"/>
+ </Entity>
+ <Entity width="70" x="-716" name="PARTICULAR" subtype="1" isAssociative="0" y="-62"/>
+ <Entity width="55" x="-802" name="EMPRESA" subtype="1" isAssociative="0" y="-119"/>
+ <Entity width="70" x="-762" name="INDIVIDUAL" subtype="1" isAssociative="0" y="108"/>
+ <Entity width="60" x="-609" name="CONJUNTA" subtype="1" isAssociative="0" y="85"/>
+ <Entity width="60" x="349" name="SUCURSAL" subtype="0" isAssociative="0" y="-315">
+  <Simple sk="0" pk="1" type="integer" parent="" name="nro_sucursal" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="120" x="247" name="OPERACION_ENTRE_CTAS" subtype="1" isAssociative="0" y="49">
+  <Simple sk="0" pk="0" type="integer" parent="" name="fecha_procesada" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="aceptada" optionSQL="1" null="1" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="65" x="41" name="OPERACION" subtype="0" isAssociative="0" y="-71">
+  <Simple sk="0" pk="1" type="integer" parent="" name="codigo_operacion" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="fecha" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="monto" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="115" x="32" name="EXTRACCION_DEPOSITO" subtype="1" isAssociative="0" y="130">
+  <Simple sk="0" pk="0" type="integer" parent="" name="limite" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="100" x="-346" name="CUENTA_CORRIENTE" subtype="1" isAssociative="0" y="12">
+  <Simple sk="0" pk="0" type="integer" parent="" name="Limite_descubierto" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="60" x="-322" name="PRESTAMO" subtype="1" isAssociative="0" y="-127">
+  <Simple sk="0" pk="0" type="integer" parent="" name="Limite" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="cancelado" optionSQL="1" null="1" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="monto" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+  <Simple sk="0" pk="0" type="integer" parent="" name="cant_cuotas" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="75" x="-119" name="CAJA_AHORRO" subtype="1" isAssociative="0" y="-7">
+  <Simple sk="0" pk="0" type="integer" parent="" name="limite_extraccion" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <Entity width="105" x="-129" name="CAJA_AHORRO_PESOS" subtype="1" isAssociative="0" y="158"/>
+ <Entity width="115" x="-288" name="CAJA_AHORRO_DOLARES" subtype="1" isAssociative="0" y="115"/>
+ <Entity width="65" x="501" name="PROVINCIA" subtype="0" isAssociative="0" y="-69">
+  <Simple sk="0" pk="1" type="integer" parent="" name="id_provincia" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </Entity>
+ <RTernary match2="simple" onDelete0="restrict" onUpdate1="restrict" max1="1" match1="simple" min1="1" min2="1" y="178" onDelete1="restrict" name0="CLIENTE" name1="CAJA_AHORRO_PESOS" x="-452" match0="simple" name2="CAJA_AHORRO_DOLARES" max0="1" width="100" name="Comprar_Vender_USS" onUpdate0="restrict" max2="1" onUpdate2="restrict" min0="1" onDelete2="restrict">
+  <Simple sk="0" pk="0" type="integer" parent="" name="limite_de_compra" optionSQL="1" null="0" cant1="20" cant3="2" mult="0" cant2="0"/>
+ </RTernary>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="1" match1="simple" min1="1" y="-134" onDelete1="restrict" name0="CUENTA" name1="OPERACION_ENTRE_CTAS" x="308" dep="0" match0="simple" max0="1" width="110" name="Opera_en_cta_destino" onUpdate0="restrict" min0="1"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="0" y="-178" onDelete1="restrict" name0="CUENTA" name1="PRESTAMO" x="-136" dep="0" match0="simple" max0="1" width="40" name="Contrata" onUpdate0="restrict" min0="1"/>
+ <Hierarchy centerY="-80" centerX="-70" name1="CUENTA_CORRIENTE" name="Hierarchy CUENTA" cont="3" name0="CUENTA" exclusive="true" total="false" typeName="tipo" name2="CAJA_AHORRO"/>
+ <Hierarchy centerY="-141" centerX="-683" name1="EMPRESA" name="Hierarchy CLIENTE" cont="3" name0="CLIENTE" exclusive="true" total="false" typeName="tipo" name2="PARTICULAR"/>
+ <Hierarchy centerY="41" centerX="-677" name1="CONJUNTA" name="Hierarchy PARTICULAR" cont="3" name0="PARTICULAR" exclusive="true" total="false" typeName="tipo" name2="INDIVIDUAL"/>
+ <Hierarchy centerY="39" centerX="87" name1="EXTRACCION_DEPOSITO" name="Hierarchy OPERACION" cont="3" name0="OPERACION" exclusive="true" total="false" typeName="tipo" name2="OPERACION_ENTRE_CTAS"/>
+ <Hierarchy centerY="85" centerX="-83" name1="CAJA_AHORRO_DOLARES" name="Hierarchy CAJA_AHORRO" cont="3" name0="CAJA_AHORRO" exclusive="true" total="false" typeName="tipo" name2="CAJA_AHORRO_PESOS"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="1" match1="simple" min1="1" y="-223" onDelete1="restrict" name0="SUCURSAL" name1="CIUDAD" x="383" dep="0" match0="simple" max0="N" width="40" name="Est?" onUpdate0="restrict" min0="1"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="1" y="-216" onDelete1="restrict" name0="EMPRESA" name1="CLIENTE" x="-769" dep="0" match0="simple" max0="N" width="55" name="Apoderado" onUpdate0="restrict" min0="0"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="1" y="-28" onDelete1="restrict" name0="CONJUNTA" name1="CLIENTE" x="-586" dep="0" match0="simple" max0="N" width="40" name="Titular" onUpdate0="restrict" min0="0"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="1" y="-303" onDelete1="restrict" name0="SUCURSAL" name1="CUENTA" x="231" dep="1" match0="simple" max0="1" width="40" name="depends0" onUpdate0="restrict" min0="1"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="1" y="-144" onDelete1="restrict" name0="CUENTA" name1="OPERACION" x="57" dep="0" match0="simple" max0="1" width="40" name="Ejecuta" onUpdate0="restrict" min0="1"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="1" match1="simple" min1="1" y="-307" onDelete1="restrict" name0="CUENTA" name1="CLIENTE" x="-271" dep="0" match0="simple" max0="N" width="55" name="Pertenece" onUpdate0="restrict" min0="1"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="0" y="-221" onDelete1="restrict" name0="CLIENTE" name1="PRESTAMO" x="-293" dep="0" match0="simple" max0="N" width="85" name="Es_co-deudor_de" onUpdate0="restrict" min0="0"/>
+ <RBinary onDelete0="restrict" firstWeak="0" rolename="" onUpdate1="restrict" max1="N" match1="simple" min1="1" y="-142" onDelete1="restrict" name0="PROVINCIA" name1="CIUDAD" x="532" dep="1" match0="simple" max0="1" width="40" name="lepends(" onUpdate0="restrict" min0="1"/>
+</DERExt>
